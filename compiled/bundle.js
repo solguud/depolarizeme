@@ -27514,6 +27514,7 @@
 	          if (data && data !== "no active users found.") {
 	            _this2.setState({ remoteUser: data });
 	            console.log("List of possible user connections: ", data);
+	            _reactRouter.browserHistory.push("/chat/" + _this2.props.params.party + "/" + _this2.state.localUser + "/" + data);
 	          }
 	        });
 	      }, 3000);

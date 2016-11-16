@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { browserHistory, Link } from 'react-router'
 
 class WaitingRoom extends React.Component {
   constructor(props) {
@@ -47,6 +47,7 @@ class WaitingRoom extends React.Component {
         if (data && data !== "no active users found.") {
           this.setState({remoteUser: data})
           console.log("List of possible user connections: ", data)
+          browserHistory.push("/chat/" + this.props.params.party + "/" + this.state.localUser + "/" + data)
         }
       })
     }, 3000)
