@@ -1,0 +1,27 @@
+
+Specs:
+Simple chat with no extra functionality
+UI:
+
+PartyChooser
+  Two buttons side-by-side underneath site tagline
+  Left button: color = blue, "Chat with a Democrat"
+  optional: Donkey icon (attached)
+  Right button: color = red, "Chat with a Republican"
+  optional: Elephant icon (attached)
+  Users that click on the right button will be put in a private chat with a user that clicks on the left button, and vice versa.
+chat
+  Each user is given a randomly assigned anonymous username.
+  Usernames are styled with the opposite color of the button the user clicked
+  Users that click the red button get blue usernames
+  Users that click the blue button get red usernames
+  Chat window
+  Can appear anywhere on screen, preferably a pop up in the current window (similar to customer service chat windows on sites these days)
+  Window must have text box with a 1000 character limit
+  Window must have two buttons
+  "Exit chat" = closes chat window
+  "Submit" = submits text entered into the text box to the chat window next to the appropriate username
+  Window must have a title, which is the two usernames associated with the chat window
+
+Chat Window should include social sharing buttons that would share a transcript of the conversation to the user's platform of choice.
+Facebook, Twitter
